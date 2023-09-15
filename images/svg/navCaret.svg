@@ -1,0 +1,5 @@
+<svg viewBox="0 0 8 6"
+    style="width:8px;height:100%;display:block;fill:var(--color-icon);flex-shrink:0"
+    class="navCaret">
+    <path d="m1 1 3 3 3-3" stroke="currentColor" stroke-width="1.5" fill="none"></path>
+</svg>
