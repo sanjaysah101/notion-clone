@@ -9,13 +9,20 @@
 }
 
 :root {
+  --color-base-100: #fff;
+  --color-base-780: #333;
+  --color-base-800: #121212;
   --color-blue-500: #0a85d1;
   --color-blue-800: #076097;
   --color-gray-600: #121212;
+  --color-orange-500: #f8792a;
   --color-purple-500: #9d34da;
   --color-purple-800: #6e239a;
+  --color-red-500: #ea4e43;
+  --color-yellow-600: #faa700;
   --color-yellow-800: #d68f00;
   --color-yellow-900: #960;
+  --color-teal-500: #2a9d99;
 }
 
 h2 {
@@ -83,3 +90,73 @@ a {
 .link-arrow-purple:hover {
   color: var(--color-purple-800);
 }
+
+/* Buttons */
+
+.btn {
+  display: inline-flex;
+  background-color: var(--color-button-primary);
+  color: var(--color-button-primary-text);
+  min-height: 36px;
+  padding: 0.4rem 1.4rem;
+  font-weight: 570;
+  border-radius: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0.3259259164px 0.7333333492px 0 rgba(0, 0, 0, 0.12),
+    0 1.5407407284px 2.8666665554px 0 rgba(0, 0, 0, 0.07),
+    0 4px 9px 0 rgba(0, 0, 0, 0.05);
+}
+
+.btn-primary {
+  background-color: var(--color-base-800);
+  color: var(--color-base-100);
+}
+
+.btn-arrow:after {
+  content: " ->";
+  margin-left: 0.5rem;
+}
+
+.btn:hover {
+  background-color: var(--color-base-780);
+}
+
+/* Icons */
+
+.icon {
+  width: 31px;
+  height: 31px;
+  fill: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.icon-red {
+  color: var(--color-red-500);
+  fill: var(--color-red-500);
+}
+
+.icon-yellow {
+  color: var(--color-yellow-600);
+  fill: var(--color-yellow-600);
+}
+
+.icon-blue {
+  color: var(--color-blue-500);
+  fill: var(--color-blue-500);
+}
+
+.icon-purple {
+  color: var(--color-purple-500);
+  fill: var(--color-purple-500);
+}
+.icon-orange {
+  color: var(--color-orange-500);
+  fill: var(--color-orange-500);
+}
+.icon-teal {
+  color: var(--color-teal-500);
+  fill: var(--color-teal-500);
+}
+
+
