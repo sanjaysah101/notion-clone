@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-blue-500: #0a85d1;
+  --color-blue-800: #076097;
+  --color-gray-600: #121212;
+  --color-purple-500: #9d34da;
+  --color-purple-800: #6e239a;
+  --color-yellow-800: #d68f00;
+  --color-yellow-900: #960;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 4.5rem;
+}
+
+html {
+  font-size: 62.5%; /* 10px*/
+}
+
+body {
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  color: var(--color-gray-600);
+}
+
+/* Links */
+
+a {
+  text-decoration: none;
+}
+
+.link-arrow {
+  font-weight: 400;
+}
+
+.link-arrow:after {
+  content: " ->";
+  text-decoration: none;
+}
+
+.link-arrow:hover span {
+  text-decoration: underline;
+}
+
+.link-arrow-red {
+  color: var(--color-icon-red);
+}
+
+.link-arrow-red:hover {
+  color: var(--color-icon-red-hover);
+}
+
+.link-arrow-yellow {
+  color: var(--color-yellow-900);
+}
+
+.link-arrow-yellow:hover {
+  color: var(--color-yellow-800);
+}
+
+.link-arrow-blue {
+  color: var(--color-blue-500);
+}
+
+.link-arrow-blue:hover {
+  color: var(--color-blue-800);
+}
+
+.link-arrow-purple {
+  color: var(--color-purple-500);
+}
+
+.link-arrow-purple:hover {
+  color: var(--color-purple-800);
+}
