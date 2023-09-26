@@ -38,8 +38,27 @@ body {
 }
 
 .container {
+  width: 95vw;
   max-width: 1024px;
   margin: 0 auto;
+}
+
+.heading-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 3.6rem;
+}
+
+.heading-subTitle {
+  font-weight: 400;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 1080px) {
+  .heading-title {
+    font-size: 4.5rem;
+  }
 }
 
 /* Links */
@@ -287,6 +306,72 @@ body {
   }
 }
 
+/* HomeCustomerWall */
+
+.HomeCustomerWall {
+  margin: 8rem auto;
+  /* max-width: 810px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.HomeCustomerWall_header {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.8rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.HomeCustomerWall-subHeader {
+  width: 95%;
+  max-width: 490px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  text-align: center;
+}
+
+.HomeCustomerWall_logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+  max-width: 820px;
+  /* width: 95%; */
+  row-gap: 3rem;
+  column-gap: 4rem;
+  margin: 3.2rem auto 0 auto;
+}
+
+.HomeCustomerWall_logoContainer img {
+  max-width: 87px;
+  max-height: 55px;
+  object-fit: contain;
+}
+
+@media screen and (min-width: 600px) {
+  .HomeCustomerWall {
+    width: 90%;
+  }
+  .heading-title {
+    font-size: 4.5rem;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .HomeCustomerWall {
+    width: 80%;
+  }
+  .heading-title {
+    font-size: 4.5rem;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+}
+
 /* Home Product */
 
 .home-product {
@@ -297,11 +382,9 @@ body {
 }
 
 .home-product-title {
-  text-align: center;
   padding-bottom: 3rem;
   max-width: 45rem;
   margin: 0 auto;
-  font-weight: 700;
 }
 
 .home-product-content {
