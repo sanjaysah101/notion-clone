@@ -231,6 +231,10 @@ body {
   display: none;
 }
 
+.homeHero_picture {
+  max-width: 852px;
+}
+
 .homeHero_picture img {
   width: 100%;
 }
@@ -522,18 +526,167 @@ body {
 }
 
 @media screen and (min-width: 1080px) {
-  /* .home-product {
-    margin: 0 3rem;
-  } */
   .home-product-image img {
     width: 110%;
   }
 }
 @media screen and (min-width: 1360px) {
-  /* .home-product {
-    margin: 0 3rem;
-  } */
   .home-product-image img {
     width: 125%;
+  }
+}
+
+/* ConsolidateTools*/
+
+.consolidate-tools {
+  margin-bottom: 8rem;
+}
+.consolidateTools_header {
+  margin: 0 auto;
+}
+
+.consolidateTools_header-title {
+  max-width: 280px;
+  font-size: 2.8rem;
+  margin-bottom: 7rem;
+}
+
+.consolidateTools-strikethroughEffectContainer {
+  display: flex;
+  transform: translateX(calc(-692px + 100%));
+}
+
+.homeConsolidate-overlay {
+  height: 78px;
+  width: 567px;
+}
+
+.consolidateTools_header {
+  overflow: hidden;
+}
+
+.homeConsolidateTools_strikethroughEffect img {
+  width: 568px;
+  margin-left: -0.5rem;
+}
+
+.homeConsolidateTools_toolsStrikethrough {
+  margin-top: -7.5rem;
+  mix-blend-mode: multiply;
+  transform: translateX(-8rem);
+  margin-left: 2.25rem;
+}
+
+.homeConsolidateTools_pencilPeekIllustration {
+  margin-left: 1rem;
+  margin-top: -2.25rem;
+}
+
+.homeConsolidateTools_pencilPeekIllustration img {
+  width: 115px;
+}
+
+.homeConsolidateTools_giantPencilIllustration {
+  display: none;
+}
+
+.blockQuote_quote {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  min-width: 280px;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 5.6rem;
+}
+
+.blockQuote_quote-title {
+  font-size: 2.4rem;
+  text-align: center;
+  font-family: Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN",
+    "Hiragino Mincho Pro", "Songti TC", "Songti SC", SimSun, "Nanum Myeongjo",
+    NanumMyeongjo, Batang, serif;
+  font-weight: 400;
+}
+
+.blockQuote_quoteCaption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.blockQuote_author {
+  text-align: center;
+  font-size: 13.5px;
+  line-height: 2.4rem;
+}
+
+.blockQuote_author-title {
+  font-weight: 700;
+}
+
+.blockQuote_author-designation {
+  font-weight: 400;
+}
+
+@media screen and (min-width: 600px) {
+  .consolidateTools_header-title {
+    max-width: 300px;
+    font-size: 3.6rem;
+  }
+
+  .blockQuote_quote-title {
+    font-size: 3rem;
+  }
+
+  .blockQuote_quoteCaption {
+    flex-direction: row;
+    column-gap: 1rem;
+  }
+
+  .blockQuote_author {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 840px) {
+  .consolidateTools_header-title {
+    max-width: 360px;
+  }
+
+  .consolidateTools-strikethroughEffectContainer {
+    transform: translateX(0);
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  .homeConsolidateTools_pencilPeekIllustration {
+    display: none;
+  }
+
+  .consolidateTools_header {
+    margin-top: 12rem;
+    overflow: visible;
+  }
+
+  .consolidateTools-strikethroughEffectContainer {
+    transform: translateX(0);
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  .homeConsolidateTools_giantPencilIllustration {
+    display: block;
+    top: -17rem;
+    right: -10rem;
+    position: absolute;
+  }
+
+  .homeConsolidateTools_giantPencilIllustration img {
+    width: 217px;
+    height: 183px;
   }
 }
