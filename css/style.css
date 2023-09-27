@@ -9,12 +9,16 @@
 }
 
 :root {
+  --color-alpha-light-100: rgba(0, 0, 0, 0.03);
   --color-base-100: #fff;
   --color-base-780: #333;
   --color-base-800: #121212;
   --color-blue-500: #0a85d1;
   --color-blue-800: #076097;
+  --color-gray-200: rgba(0, 0, 0, 0.1);
+  --color-gray-500: rgba(0, 0, 0, 0.6);
   --color-gray-600: #121212;
+  --color-gray-800: #050505;
   --color-orange-500: #f8792a;
   --color-purple-400: #bd73e8;
   --color-purple-500: #9d34da;
@@ -59,6 +63,198 @@ body {
   .heading-title {
     font-size: 4.5rem;
   }
+}
+
+.navHeader {
+  width: 100%;
+  border-bottom: 1px solid var(--color-gray-200);
+  position: fixed;
+  z-index: 999;
+  background-color: #fff;
+  top: 0;
+}
+
+.inner {
+  padding: 15px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand-logo {
+  display: inline-block;
+  width: 92px;
+  height: 32px;
+}
+
+.desktop-actions {
+  width: 100%;
+}
+
+.desktop-actions .navigationBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.desktop-actions .navigationBar .nav-left .nav-list,
+.desktop-actions .navigationBar .nav-right,
+.desktop-actions .navigationBar .nav-right .nav-list {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+}
+
+.nav-left {
+  margin-left: 1rem;
+}
+
+.nav-list {
+  list-style-type: none;
+}
+
+.nav-item,
+.nav-item a {
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 0.3rem;
+  color: var(--color-gray-800);
+}
+
+.desktop-actions .has-menu {
+  position: relative;
+  padding-right: 1.5rem;
+}
+
+.desktop-actions .has-menu::after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 6px;
+  background: url(/images/svg/navCaret.svg);
+  position: absolute;
+  top: 50%;
+  margin-top: -2px;
+  right: 0.2rem;
+  transition: transform 0.5s ease-in-out;
+}
+
+.desktop-actions .has-menu:hover::after {
+  transform: rotate(180deg);
+}
+
+.desktop-actions .nav-item:hover {
+  background-color: var(--color-alpha-light-100);
+}
+
+.desktop-actions .nav-right, 
+.desktop-actions .nav-right .nav-list{
+  align-items: center;
+}
+
+.desktop-actions .divider {
+  width: 1px;
+  background: var(--color-gray-200);
+  height: 20px;
+  margin: 0 10px;
+}
+
+.desktop-actions .cta-item {
+  margin-left: 0.5rem;
+}
+
+.desktop-actions .cta-item a {
+  padding: 4px 11px;
+  font-size: 1.35rem;
+}
+
+.desktop-actions .nav-item .popup {
+  background-color: #fff;
+  box-shadow: 0px 4px 18px rgb(0 0 0/4%),
+    0px 2.025px 7.84688px rgba(0, 0, 0, 0.027), 0px 0.8px 2.925px rgb(0 0 0/2%),
+    0px 0.175px 1.04062px rgba(0, 0, 0, 0.013);
+  border-radius: 0.3125rem;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.1s ease-in-out, opacity 0.1s ease-in-out;
+}
+
+.desktop-actions .popup .menu {
+  display: flex;
+}
+
+.desktop-actions .menu .menu-section {
+  padding: 1rem;
+  border-right: 1px solid var(--color-gray-200);
+}
+
+.desktop-actions .nav-section-content {
+  max-width: 300px;
+}
+
+.desktop-actions .nav-section-list {
+  min-width: 170px;
+}
+
+.desktop-actions .menu-section .nav-section .nav-section-title {
+  margin-bottom: 0.5rem;
+  color: var(--color-gray-500);
+  text-transform: uppercase;
+  font-size: 1.1rem;
+}
+.desktop-actions .menu-section .nav-section .nav-list {
+  flex-direction: column;
+}
+
+.desktop-actions .menu-section .nav-section .nav-list .nav-item {
+  padding-left: 0;
+  padding-right: 3rem;
+}
+.desktop-actions .menu-section .nav-section .nav-list .nav-item a {
+  padding: 0;
+}
+
+.desktop-actions .nav-item-inner {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.desktop-actions .nav-item-icon img {
+  width: 4rem;
+  height: 4rem;
+}
+
+.desktop-actions .nav-item-icon .icon-small {
+  margin-right: 0.5rem;
+  width: 2.2rem;
+  height: 2.2rem;
+}
+
+.desktop-actions .nav-item-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.desktop-actions .nav-item-body .label {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--color-gray-800);
+}
+
+.desktop-actions .nav-item-body .description {
+  font-size: 13.5px;
+  font-weight: 400;
+  color: var(--color-gray-500);
+}
+
+.desktop-actions .nav-item-solution:hover .popup,
+.desktop-actions .nav-item:hover .popup {
+  visibility: visible;
+  opacity: 1;
 }
 
 /* Links */
