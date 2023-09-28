@@ -133,7 +133,7 @@ body {
   display: block;
   width: 8px;
   height: 6px;
-  background: url(/images/svg/navCaret.svg);
+  background: url("../images/svg/navCaret.svg");
   position: absolute;
   top: 50%;
   margin-top: -2px;
@@ -326,7 +326,7 @@ body {
     display: block;
     width: 12px;
     height: 8px;
-    background: url(/images/svg/navCaret.svg);
+    background: url("../images/svg/navCaret.svg");
     position: absolute;
     right: 3px;
     top: 50%;
