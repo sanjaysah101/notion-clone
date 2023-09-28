@@ -1,0 +1,10 @@
+<svg
+    viewBox="0 0 30 30"
+    xmlns="http://www.w3.org/2000/svg"
+    class="close"
+    style="width: 22px; height: 100%; display: block; fill: var(--color-ui-icon); flex-shrink: 0;">
+    <polygon
+        points="26,5.4 24.6,4 15,13.6 5.4,4 4,5.4 13.6,15 4,24.6 5.4,26 15,16.4 24.6,26 26,24.6 16.4,15 "
+    >
+    </polygon>
+</svg>
